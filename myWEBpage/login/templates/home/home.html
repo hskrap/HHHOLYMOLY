@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HELLO DJANGO</title>
+</head>
+<body>
+    <form action="/test/" method="post"> {% csrf_token %}
+        <div>
+            <input id="search" name="search" placeholder="Search"> <button id="click" type="submit"> click </button>
+        </div>
+    </form>
+    <div style="display:{{display}}"> no : {{ no }} name : {{ name }}</div>
+</body>
+<script>
+    if({{data}})
+        alert("{{ alert }}");
+</script>
+</html>

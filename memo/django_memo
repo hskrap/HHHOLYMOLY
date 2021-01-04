@@ -1,0 +1,33 @@
+장고 프로젝트 생성
+django-admin startproject 프로젝트이름
+
+장고 앱 생성
+python3 manage.py startapp 앱이름
+
+장고 웹 서버 실행
+1. 생성된 프로젝트 안에서 진행
+2. python3 manage.py runserver
+
+
+장고 동작과정
+url요청 -> urls에서 해당 url 매핑 -> 있으면 app views로 전달 -> app views에서 함수 실행 
+
+1. 프로젝트 settings에 app 등록
+2. app 디렉토리 밑에 templates 디렉토리 생성
+3. templates 디렉토리에 html 파일 넣음
+4. app views에 함수 생성
+    ex) from django.shortcuts import render
+	
+	def fun1(request):
+		return render(request,'TEST.html')
+
+5. 프로젝트 urls에 url 매핑 설정
+    ex) from django.contrib import admin
+	from django.urls import path
+	import 앱이름.views
+	
+	~~
+		path('url', app.views.함수, name='함수'),
+
+
+

@@ -1,0 +1,20 @@
+리눅스 깃헙 초기 세팅
+1. git init
+2. vi TEST.md
+3. git add TEST.md
+4. git commit -m "메세지"
+5. git remote add origin 깃헙주소
+6. git push -u origin main
+
+깃헙 추가
+1. git add 디렉 or 파일
+2. git commit -m "메세지"
+3. git push -u origin main
+
+깃헙 삭제(깃헙 저자소만 삭제, 로컬은 남김)
+1. git rm --cached 디렉 or 파일
+2. git commit -m "메세지"
+3. git push -u origin main
+
+commit 찌거기 제거
+git clean -df
